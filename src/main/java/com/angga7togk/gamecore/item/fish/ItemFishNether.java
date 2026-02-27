@@ -17,146 +17,146 @@ public abstract class ItemFishNether extends BaseFishItem {
 
     // FISH CLASS
 
-    public class ItemFishAbyssalLurker extends ItemFishNether {
+    public static class ItemFishAbyssalLurker extends ItemFishNether {
 
         public ItemFishAbyssalLurker() {
-            super("nukkit:abyssal_lurker", "Abyssal Lurker", "abyssal_lurker");
+            super("gamecore:abyssal_lurker", "Abyssal Lurker", "abyssal_lurker");
         }
 
     }
 
-    public class ItemFishAnglerFish extends ItemFishNether {
+    public static class ItemFishAnglerFish extends ItemFishNether {
 
         public ItemFishAnglerFish() {
-            super("nukkit:angler_fish", "Angler Fish", "angler_fish");
+            super("gamecore:angler_fish", "Angler Fish", "angler_fish");
         }
 
     }
 
-    public class ItemFishBlazePike extends ItemFishNether {
+    public static class ItemFishBlazePike extends ItemFishNether {
 
         public ItemFishBlazePike() {
-            super("nukkit:blaze_pike", "Blaze Pike", "blaze_pike");
+            super("gamecore:blaze_pike", "Blaze Pike", "blaze_pike");
         }
 
     }
 
-    public class ItemFishChargedBullhead extends ItemFishNether {
+    public static class ItemFishChargedBullhead extends ItemFishNether {
 
         public ItemFishChargedBullhead() {
-            super("nukkit:charged_bullhead", "Charged Bullhead", "charged_bullhead");
+            super("gamecore:charged_bullhead", "Charged Bullhead", "charged_bullhead");
         }
 
     }
 
-    public class ItemFishCoalCrucian extends ItemFishNether {
+    public static class ItemFishCoalCrucian extends ItemFishNether {
 
         public ItemFishCoalCrucian() {
-            super("nukkit:coal_crucian", "Coal Crucian", "coal_crucian");
+            super("gamecore:coal_crucian", "Coal Crucian", "coal_crucian");
         }
 
     }
 
-    public class ItemFishEnderShad extends ItemFishNether {
+    public static class ItemFishEnderShad extends ItemFishNether {
 
         public ItemFishEnderShad() {
-            super("nukkit:ender_shad", "Ender Shad", "ender_shad");
+            super("gamecore:ender_shad", "Ender Shad", "ender_shad");
         }
 
     }
 
-    public class ItemFishExplosiveCrucian extends ItemFishNether {
+    public static class ItemFishExplosiveCrucian extends ItemFishNether {
 
         public ItemFishExplosiveCrucian() {
-            super("nukkit:explosive_crucian", "Explosive Crucian", "explosive_crucian");
+            super("gamecore:explosive_crucian", "Explosive Crucian", "explosive_crucian");
         }
 
     }
 
-    public class ItemFishFungiCatfish extends ItemFishNether {
+    public static class ItemFishFungiCatfish extends ItemFishNether {
 
         public ItemFishFungiCatfish() {
-            super("nukkit:fungi_catfish", "Fungi Catfish", "fungi_catfish");
+            super("gamecore:fungi_catfish", "Fungi Catfish", "fungi_catfish");
         }
 
     }
 
-    public class ItemFishMagmaJellyfish extends ItemFishNether {
+    public static class ItemFishMagmaJellyfish extends ItemFishNether {
 
         public ItemFishMagmaJellyfish() {
-            super("nukkit:magma_jellyfish", "Magma Jellyfish", "magma_jellyfish");
+            super("gamecore:magma_jellyfish", "Magma Jellyfish", "magma_jellyfish");
         }
 
     }
 
-    public class ItemFishMandarinfish extends ItemFishNether {
+    public static class ItemFishMandarinfish extends ItemFishNether {
 
         public ItemFishMandarinfish() {
-            super("nukkit:mandarinfish", "Mandarinfish", "mandarinfish");
+            super("gamecore:mandarinfish", "Mandarinfish", "mandarinfish");
         }
 
     }
 
-    public class ItemFishMudTuna extends ItemFishNether {
+    public static class ItemFishMudTuna extends ItemFishNether {
 
         public ItemFishMudTuna() {
-            super("nukkit:mud_tuna", "Mud Tuna", "mud_tuna");
+            super("gamecore:mud_tuna", "Mud Tuna", "mud_tuna");
         }
 
     }
 
-    public class ItemFishNetherSturgeon extends ItemFishNether {
+    public static class ItemFishNetherSturgeon extends ItemFishNether {
 
         public ItemFishNetherSturgeon() {
-            super("nukkit:nether_sturgeon", "Nether Sturgeon", "nether_sturgeon");
+            super("gamecore:nether_sturgeon", "Nether Sturgeon", "nether_sturgeon");
         }
 
     }
 
-    public class ItemFishObsidianBream extends ItemFishNether {
+    public static class ItemFishObsidianBream extends ItemFishNether {
 
         public ItemFishObsidianBream() {
-            super("nukkit:obsidian_bream", "Obsidian Bream", "obsidian_bream");
+            super("gamecore:obsidian_bream", "Obsidian Bream", "obsidian_bream");
         }
 
     }
 
-    public class ItemFishPearlSardine extends ItemFishNether {
+    public static class ItemFishPearlSardine extends ItemFishNether {
 
         public ItemFishPearlSardine() {
-            super("nukkit:pearl_sardine", "Pearl Sardine", "pearl_sardine");
+            super("gamecore:pearl_sardine", "Pearl Sardine", "pearl_sardine");
         }
 
     }
 
-    public class ItemFishPike extends ItemFishNether {
+    public static class ItemFishPike extends ItemFishNether {
 
         public ItemFishPike() {
-            super("nukkit:pike", "Pike", "pike");
+            super("gamecore:pike", "Pike", "pike");
         }
 
     }
 
-    public class ItemFishQuartzChub extends ItemFishNether {
+    public static class ItemFishQuartzChub extends ItemFishNether {
 
         public ItemFishQuartzChub() {
-            super("nukkit:quartz_chub", "Quartz Chub", "quartz_chub");
+            super("gamecore:quartz_chub", "Quartz Chub", "quartz_chub");
         }
 
     }
 
-    public class ItemFishWitheredCrucian extends ItemFishNether {
+    public static class ItemFishWitheredCrucian extends ItemFishNether {
 
         public ItemFishWitheredCrucian() {
-            super("nukkit:withered_crucian", "Withered Crucian", "withered_crucian");
+            super("gamecore:withered_crucian", "Withered Crucian", "withered_crucian");
         }
 
     }
 
-    public class ItemFishMawsonia extends ItemFishNether {
+    public static class ItemFishMawsonia extends ItemFishNether {
 
         public ItemFishMawsonia() {
-            super("nukkit:mawsonia", "Mawsonia", "mawsonia");
+            super("gamecore:mawsonia", "Mawsonia", "mawsonia");
         }
 
     }

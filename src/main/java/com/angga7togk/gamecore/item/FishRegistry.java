@@ -7,10 +7,11 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
-import com.angga7togk.gamecore.domain.model.FishRegistryModel;
-import com.angga7togk.gamecore.domain.types.Rarity;
+import com.angga7togk.gamecore.domain.enums.Rarity;
+import com.angga7togk.gamecore.domain.model.fishing.FishRegistryModel;
 import com.angga7togk.gamecore.item.fish.ItemFishNether.*;
 import com.angga7togk.gamecore.item.fish.ItemFishOverworld.*;
+import com.angga7togk.gamecore.service.FishingService;
 
 import cn.nukkit.item.Item;
 import cn.nukkit.item.customitem.CustomItem;
@@ -37,7 +38,7 @@ public class FishRegistry {
                 .distinct()
                 .toList();
 
-        Rarity rolled = Rarity.pityRandom(player, rarityPool);
+        Rarity rolled = FishingService.RarityPityFishing.pityRandom(player, rarityPool);
 
         List<FishRegistryModel> filtered = pool.stream()
                 .filter(f -> f.getRarities().contains(rolled))
