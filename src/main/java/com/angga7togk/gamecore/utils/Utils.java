@@ -1,5 +1,6 @@
 package com.angga7togk.gamecore.utils;
 
+import java.text.DecimalFormat;
 import java.util.concurrent.ThreadLocalRandom;
 
 import cn.nukkit.Player;
@@ -9,6 +10,8 @@ import cn.nukkit.item.StringItem;
 import cn.nukkit.utils.Binary;
 
 public class Utils {
+
+    private static final DecimalFormat DF = new DecimalFormat("#,###.##");
 
     // ================= ITEM -> STRING =================
 
@@ -128,4 +131,32 @@ public class Utils {
         return sb.toString().trim();
     }
 
+    /**
+     * Format tampilan berat agar lebih rapi di Lore/Pesan
+     * Contoh: 1500 kg -> 1.5 Ton
+     * 
+     * @param kg Berat dalam kilogram
+     * @return String format (kg/Ton)
+     */
+    public static String formatWeight(double kg) {
+        if (kg >= 1000) {
+            double ton = kg / 1000;
+            return DF.format(ton) + " Ton";
+        }
+        return DF.format(kg) + " kg";
+    }
+    
+    /**
+     * Format tampilan panjang agar lebih rapi di Lore/Pesan
+     * Contoh: 150 cm -> 1.5 m
+     * * @param cm Panjang dalam centimeter
+     * @return String format (cm/m)
+     */
+    public static String formatLength(double cm) {
+        if (cm >= 100) {
+            double meter = cm / 100;
+            return DF.format(meter) + " m";
+        }
+        return DF.format(cm) + " cm";
+    }
 }

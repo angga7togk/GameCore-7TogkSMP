@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.angga7togk.gamecore.Loader;
-import com.angga7togk.gamecore.domain.types.Sort;
+import com.angga7togk.gamecore.domain.enums.Sort;
 
 import cn.nukkit.utils.Config;
 

@@ -1,8 +1,8 @@
-package com.angga7togk.gamecore.domain.model;
+package com.angga7togk.gamecore.domain.model.fishing;
 
 import java.util.List;
 
-import com.angga7togk.gamecore.domain.types.Rarity;
+import com.angga7togk.gamecore.domain.enums.Rarity;
 
 import cn.nukkit.item.Item;
 import lombok.AllArgsConstructor;

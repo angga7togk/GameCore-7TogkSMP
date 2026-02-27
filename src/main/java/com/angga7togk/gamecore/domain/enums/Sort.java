@@ -1,4 +1,4 @@
-package com.angga7togk.gamecore.domain.types;
+package com.angga7togk.gamecore.domain.enums;
 
 public enum Sort {
     HIGH_TO_LOW,

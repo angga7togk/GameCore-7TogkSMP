@@ -1,5 +1,5 @@
 name: GameCore
-main: com.angga7togk.gamecore.GameCore
+main: com.angga7togk.gamecore.Loader
 version: 1.0.0
 api: ["1.0.0"]
 author: angga7togk

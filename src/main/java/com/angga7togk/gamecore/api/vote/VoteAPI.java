@@ -11,7 +11,7 @@ import java.util.Map;
 import org.jose4j.json.internal.json_simple.parser.JSONParser;
 
 import com.angga7togk.gamecore.Loader;
-import com.angga7togk.gamecore.domain.types.Sort;
+import com.angga7togk.gamecore.domain.enums.Sort;
 import com.nimbusds.jose.shaded.json.JSONArray;
 import com.nimbusds.jose.shaded.json.JSONObject;
 

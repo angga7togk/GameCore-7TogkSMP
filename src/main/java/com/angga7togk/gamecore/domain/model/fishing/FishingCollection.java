@@ -1,4 +1,4 @@
-package com.angga7togk.gamecore.domain.model;
+package com.angga7togk.gamecore.domain.model.fishing;
 
 import java.util.Map;
 

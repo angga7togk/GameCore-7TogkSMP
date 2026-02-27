@@ -1,9 +1,6 @@
-package com.angga7togk.gamecore.domain.types;
+package com.angga7togk.gamecore.domain.enums;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 import com.angga7togk.gamecore.utils.Utils;
@@ -92,62 +89,5 @@ public enum Rarity {
         }
 
         return COMMON;
-    }
-
-    /**
-     * Pity Random RNG
-     */
-
-    private static final Map<UUID, Integer> FAIL_STACK = new HashMap<>();
-
-    public static Rarity pityRandom(UUID player, List<Rarity> pool) {
-        int fail = FAIL_STACK.getOrDefault(player, 0);
-
-        double bonus = Math.min(20, fail * 0.5); // max +20%
-
-        double roll = ThreadLocalRandom.current().nextDouble(100);
-
-        double legendaryChance = 0.15 + bonus * 0.4;
-        double mythicChance = 1.0 + bonus * 0.7;
-        double specialChance = 3.0 + bonus * 1.5;
-        double rareChance = 6.0 + bonus * 2.0;
-
-        double cursor = 0;
-
-        if (pool.contains(LEGENDARY)) {
-            cursor += legendaryChance;
-            if (roll < cursor)
-                return reset(player, LEGENDARY);
-        }
-
-        if (pool.contains(MYTHIC)) {
-            cursor += mythicChance;
-            if (roll < cursor)
-                return reset(player, MYTHIC);
-        }
-
-        if (pool.contains(SPECIAL)) {
-            cursor += specialChance;
-            if (roll < cursor)
-                return reset(player, SPECIAL);
-        }
-
-        if (pool.contains(RARE)) {
-            cursor += rareChance;
-            if (roll < cursor)
-                return reset(player, RARE);
-        }
-
-        FAIL_STACK.put(player, fail + 1);
-        return random(pool);
-    }
-
-    private static Rarity reset(UUID player, Rarity r) {
-        FAIL_STACK.put(player, 0);
-        return r;
-    }
-
-    public static void removeFailStack(UUID player) {
-        FAIL_STACK.remove(player);
     }
 }
