@@ -1,0 +1,49 @@
+name: GameCore
+main: com.angga7togk.gamecore.GameCore
+version: 1.0.0
+api: ["1.0.0"]
+author: angga7togk
+description: GameCore Nukkit MOT Plugin
+
+commands:
+  floatingtext:
+    description: Manage floating text
+    usage: "/floatingtext <set|remove> <name>"
+    permission: op
+    aliases:
+      - ft
+  vote:
+    description: claim vote rewards
+    usage: "/vote"
+    permission: all
+  resetjump:
+    description: "JANGAN DI SENTUH OWNER ONLY!!!!!"
+    permission: op
+
+permissions:
+  all:
+    default: true
+  op:
+    default: op
+  admin:
+    default: op
+  addbalance.command:
+    default: op
+  reducebalance.command:
+    default: op
+  setbalance.command:
+    default: op
+  topupbalance.command:
+    default: op
+  settreasury.command:
+    default: op
+  settax.command:
+    default: op
+  paybalance.command:
+    default: true
+  topbalance.command:
+    default: true
+  balance.command:
+    default: true
+  size.command:
+    default: op
