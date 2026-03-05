@@ -1,0 +1,21 @@
+{
+  "namespace": "hud",
+  "custom_coin_hud": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [-10, 10],
+    "size": [250, 40],
+    "controls": [
+      {
+        "coin_text": {
+          "type": "label",
+          "text": "§6🪙 Coins: $scoreboard.money",
+          "font_size": "small",
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
+      }
+    ]
+  }
+}

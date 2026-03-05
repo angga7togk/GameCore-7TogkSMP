@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Fish [RP]",
+    "description": "Fish [RP] by 7TogkID",
+    "uuid": "068ad477-d11d-4575-a14b-ecb18da3c142",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "description": "Fish [RP] by 7TogkID",
+      "type": "resources",
+      "uuid": "3f8dabb8-b884-4376-8308-e178ce3fbf95",
+      "version": [1, 0, 0]
+    }
+  ]
+}
